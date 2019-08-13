@@ -9,5 +9,5 @@ RUN apk update \
 RUN pip install --upgrade pip
 ADD requirements.txt env/requirements.txt
 RUN pip install -r env/requirements.txt
-
+ADD pika.tar /usr/local/lib/python3.6/site-packages/
 CMD ["python3"]
